@@ -41,10 +41,3 @@ endchoice
 endif # LVGL
 
 endif
-
-if SHIELD_CROSSES_LEFT
-if ZMK_DISPLAY
-config ZEPHYR_DISPLAY_ORIENTATION_ROTATED_180
-  default y
-endif #ZMK_DISPLAY
-endif
