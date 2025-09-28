@@ -43,7 +43,8 @@ endif # LVGL
 endif
 
 if SHIELD_CROSSES_LEFT
-  config DISPLAY_ORIENTATION_ROTATED_180
-    default y
-    
+if ZMK_DISPLAY
+config ZEPHYR_DISPLAY_ORIENTATION_ROTATED_180
+  default y
+endif #ZMK_DISPLAY
 endif
