@@ -28,7 +28,7 @@
   status = "okay";
 };
 
-&spi0 {
+&spi1 {
   cs-gpios = <&gpio1 0 GPIO_ACTIVE_LOW>;
 
   trackball_central: trackball_central@0 {
