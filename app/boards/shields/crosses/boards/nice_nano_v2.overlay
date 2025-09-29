@@ -14,7 +14,7 @@
                 <NRF_PSEL(TWIM_SCL, 1, 6)>;
             low-power-enable;
         };
-    }; 
+    };
 
     spi1_default: spi1_default {
         group1 {
@@ -37,7 +37,7 @@
         };
     };
 };
- 
+
 &i2c0 {
     compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
