@@ -55,9 +55,6 @@
 &trackball_central_listener {
   status = "okay";
   device = <&trackball_central>;
-  input-processors
-    = <&zip_xy_scaler 1 2>
-    ;
 };
 
 &pro_micro_i2c {

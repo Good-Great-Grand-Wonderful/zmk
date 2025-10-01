@@ -40,10 +40,7 @@
 &trackball_peripheral_split {
   device = <&trackball_peripheral>;
   input-processors
-    = <&zip_xy_to_scroll_mapper>
-    , <&zip_scroll_scaler 1 8>
-    , <&zip_report_rate_limit 16>
-    ;
+    = <&zip_xy_to_scroll_mapper>;
 };
 &pro_micro_i2c {
     status = "okay";
