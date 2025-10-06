@@ -1,3 +1,4 @@
+# Copyright (c) 2025 Vincent Franco
 # SPDX-License-Identifier: MIT
 
 set(OPENOCD_NRF5_SUBFAMILY nrf52)

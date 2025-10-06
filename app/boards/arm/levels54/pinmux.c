@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2025 The ZMK Contributors
- *
+ * Copyright (c) 2025 Vincent Franco
  * SPDX-License-Identifier: MIT
  */
 

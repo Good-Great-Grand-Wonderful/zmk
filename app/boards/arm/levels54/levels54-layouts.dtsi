@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 Vincent Franco
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <physical_layouts.dtsi>
 
 / {
