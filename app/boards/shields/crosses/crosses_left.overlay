@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 Vincent Franco
+ * SPDX-License-Identifier: MIT
+ */
+
 #include "crosses.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors/report_rate_limit.dtsi>
