@@ -7,6 +7,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors/report_rate_limit.dtsi>
 #include <behaviors/rate_limit.dtsi>
+#include <input/processors/xyz.dtsi>
 
 / {
   chosen {
@@ -47,12 +48,12 @@
     ;
 
   col-gpios
-    = <&gpio0 20 GPIO_ACTIVE_HIGH>
-    , <&gpio0 29 GPIO_ACTIVE_HIGH>
-    , <&gpio1 2 GPIO_ACTIVE_HIGH>
-    , <&gpio1 0 GPIO_ACTIVE_HIGH>
+    = <&gpio1 4 GPIO_ACTIVE_HIGH>
     , <&gpio1 6 GPIO_ACTIVE_HIGH>
-    , <&gpio1 4 GPIO_ACTIVE_HIGH>
+    , <&gpio1 0 GPIO_ACTIVE_HIGH>
+    , <&gpio1 2 GPIO_ACTIVE_HIGH>
+    , <&gpio0 29 GPIO_ACTIVE_HIGH>
+    , <&gpio0 20 GPIO_ACTIVE_HIGH>
     ;
 };
 
@@ -71,6 +72,7 @@
         y-input-code = <INPUT_REL_Y>;
         x-invert;
         y-invert;
+        xy-swap;
         force-awake;
         /* keep the sensor awake while ZMK activity state is ACTIVE,
            fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
@@ -83,5 +85,6 @@
     device = <&trackball_peripheral>;
     input-processors
       = <&zip_xy_to_scroll_mapper>
+      , <&zip_xyz>
       , <&zip_ble_report_rate_limit>;
 };
