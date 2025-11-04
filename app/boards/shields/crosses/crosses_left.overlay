@@ -16,7 +16,6 @@
     , <&pro_micro 10 GPIO_ACTIVE_HIGH>
     , <&pro_micro 16 GPIO_ACTIVE_HIGH>
     , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-
     ;
 };
 
@@ -48,6 +47,7 @@
     = <&zip_xy_to_scroll_mapper>
 		, <&zip_ble_report_rate_limit>;
 };
+
 &pro_micro_i2c {
     status = "okay";
 
